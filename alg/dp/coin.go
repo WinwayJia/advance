@@ -1,7 +1,6 @@
 package dp
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -38,7 +37,6 @@ func CoinExchange(sum int, coins []int) int {
 			results[i] = min + 1
 		}
 	}
-	fmt.Println(results[1:])
 
 	return results[sum]
 }
