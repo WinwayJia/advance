@@ -26,5 +26,5 @@ func (s *Stack) Pop() interface{} {
 }
 
 func (s *Stack) Empty() bool {
-	return s.top == 0
+	return s.top <= 0
 }

@@ -30,3 +30,10 @@ func GenSList(vs []int) *SNode {
 
 	return head.next
 }
+
+func (l *SNode) ForEach(f func(node *SNode)) {
+	for l != nil {
+		f(l)
+		l = l.next
+	}
+}
