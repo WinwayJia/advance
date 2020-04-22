@@ -8,3 +8,9 @@ TIME_WAIT
 
 negle
 
+
+
+
+epoll ET LT
+
+惊群
