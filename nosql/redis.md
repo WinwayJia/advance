@@ -4,6 +4,7 @@ key 淘汰机制
 内存暴涨-rehash
 
 
-zset使用hash字典和跳表
-- 字典中只存score
-- 跳表中存filed key和score
+zset使用dict和skiplist
+- dict中只存score
+- skiplist中存field key和score
+- zadd时field key长度或者field长度超了，会调用zsetConvert从ziplist转到dick+skiplist
