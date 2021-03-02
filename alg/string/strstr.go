@@ -6,7 +6,6 @@ func StrStr(target, pattern string) int {
 }
 
 // StrStrHorspool horspool 算法，bm的简化版
-
 func GenSkipTable(pattern string) []int {
 	table := make([]int, 256, 256)
 	for i := 0; i < 256; i++ {
